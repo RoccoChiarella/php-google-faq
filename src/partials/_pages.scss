@@ -1,0 +1,13 @@
+.faqContainer{
+    .container{
+        .faq{
+            h2{
+                font-size: $question_font_size;
+            }
+            p{
+                margin: 10px 0;
+                font-size: $response_font_size;
+            }
+        }
+    }
+}
