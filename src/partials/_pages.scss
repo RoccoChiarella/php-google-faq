@@ -1,11 +1,16 @@
 .faqContainer{
     .container{
+        padding: 32px;
         .faq{
             h2{
+                padding: 64px 0 0 0;
                 font-size: $question_font_size;
             }
             p{
                 margin: 10px 0;
+                letter-spacing: .2px;
+                line-height: 24px;
+                padding-top: 20px;
                 font-size: $response_font_size;
             }
         }

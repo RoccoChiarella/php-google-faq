@@ -1,0 +1,48 @@
+header{
+    .header-top{
+        @include flex(0,space-between,0);
+        padding: 8px;
+        .left{
+            @include flex(row, space-around, center);
+            padding-left: 12px;
+            .logo{
+                outline: none;
+                &::before{
+                    content: url(https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg);
+                    display: inline-block;
+                    height: 24px;
+                    width: 74px;
+                }
+            }
+            .logo-text{
+                color: $font_color_grey;
+            }
+        }
+        .right{
+            @include flex(row, space-around, center);
+            .menu-circle{
+                color: $font_color_grey;
+                margin-right: 10px;
+                @include flex(row, space-around, center);
+            }
+            img{
+                border-radius: 100%;
+            }
+        }
+    }
+    .header-bottom{
+        padding-left: 20px;
+        border-bottom: 1px solid rgba(151,151,151,0.5);
+        ul{
+            list-style: none;
+            @include flex(row, 0, flex-start);
+            padding-bottom: 6px;
+            li{
+                margin-right: 42px;
+                a{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
